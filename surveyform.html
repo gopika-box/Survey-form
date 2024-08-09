@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <title>Survey-form</title>
+</head>
+<body class="bg-purple-600 w-full">
+    <div class="flex flex-col items-center text-white justify-center w-full">
+        <h3 class="text-2xl font-bold">Survey-Form</h3> 
+        <h5 class="">Thank you for taking this servey</h5>
+    </div>
+
+
+    <div class="flex justify-center ">
+        <form class="bg-purple-950 px-8 py-6 rounded">
+            <fieldset>
+                <label class="text-white" for="name">Name <br>
+                    <input type="text" id="name" placeholder="Enter your name" class="rounded w-full text-sm py-1">
+                </label> <br>
+                <label class="text-white" for="name">Email <br>
+                    <input type="email" id="email" placeholder="Enter your email" class="rounded w-full text-sm py-1">
+                </label> <br>
+                <label class="text-white" for="age">Age <br>
+                    <input type="text" id="age" placeholder="Enter your age" class="rounded w-full text-sm py-1">
+                </label> <br>
+    
+                <label class="text-white" for="">Which options best describe your current role?</label>
+                 <br><select name="" id="" class="rounded w-full text-sm py-1">
+                    <option value="">Select current role</option>
+                    <option value="">Trainee</option>
+                    <option value="">Manager</option>
+                 </select>
+            </fieldset> <br>
+            
+            <fieldset class="text-white">
+                <label for="session">Was the session interactive? <br>
+                    <input type="radio" name="radio" id="yes" value="yes"> yes <br>
+                    <input type="radio" name="radio" id="no" value="no"> no
+                </label>
+            </fieldset> <br>
+
+            <fieldset class="text-white">
+                <label for="">What would you like to see improved?</label> <br>
+                <input type="checkbox"> More projects <br>
+                <input type="checkbox"> Student recap <br>
+                <input type="checkbox"> Lesser homework <br>
+                <input type="checkbox"> Live Q/A <br>
+                <input type="checkbox"> Use collaboration tools
+            </fieldset> <br>
+
+            <fieldset class="text-white">
+                <label for="comments">Extra comment or suggestion <br>
+                    <textarea name="comments" id="comments" rows="4" cols="45" placeholder="Enter your comments here"></textarea>
+                </label>
+            </fieldset> <br>
+
+            <button class="bg-[#00CC33] hover:bg-green-700 w-full text-white text-semibold" type="Submit">Submit</button>
+
+    
+        </form>
+    </div>
+
+   
+</body>
+</html>
